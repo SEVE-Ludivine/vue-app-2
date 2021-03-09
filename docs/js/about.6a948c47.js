@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{"1aaf":function(e,t,a){"use strict";a.r(t);var n=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},s=[function(){var e=this,t=e.$createElement,a=e._self._c||t;return a("div",{staticClass:"carte"},[a("h1",[e._v("This is an carte page")])])}],c=a("2877"),r={},i=Object(c["a"])(r,n,s,!1,null,null,null);t["default"]=i.exports}}]);
-//# sourceMappingURL=about.6a948c47.js.map

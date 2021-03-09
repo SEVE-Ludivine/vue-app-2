@@ -14,7 +14,6 @@
 </template>
 
 <script>
-const apiURL = 'https://data.nantesmetropole.fr/api/records/1.0/search/?dataset=244400404_parcs-jardins-nantes&q=&facet=libtype&facet=gardien&facet=jeux_enfants&facet=pataugeoire&facet=sanitaires&facet=sanitaires_handicapes&facet=chiens_autorises&facet=jardin_clos&facet=abris&facet=point_eau_potable&facet=table_pique_nique'
 export default {
   name: "Parc",
   props : ["obj","src"],
@@ -29,7 +28,6 @@ export default {
   created: function() {
     this.product = this.obj;
     this.chien= this.product.fields.chiens_autorises
-    console.log(apiURL);
   }
 }
 </script>
