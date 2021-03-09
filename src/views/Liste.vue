@@ -1,16 +1,13 @@
 
 <template>
   <div class="container">
+    <h1 class="my-4">Liste des parcs de Nantes</h1>
+    <HelloWorld msg="PARCS"/>
     <div class="row">
-      <div class="col-lg-3">
-        <h1 class="my-4">Liste des parcs de Nantes</h1>
-        <HelloWorld msg="PARCS"/>
-        <!--<a target="_blank" href={{ product.fields.siteweb }}>{{ product.fields.siteweb }}</a>-->
-      </div>
-      <div class="col-lg-9">
+
         <div class="row">
           <Parc v-for="listeParc in this.json" :key="listeParc.recordid" :obj="listeParc" src="listeParc"></Parc>
-        </div>
+
       </div>
     </div>
   </div>
