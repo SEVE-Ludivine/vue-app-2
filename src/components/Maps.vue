@@ -4,8 +4,6 @@
       :lat-lng="marker.fields.location"
   >
     <l-icon
-        :icon-size="dynamicSize"
-        :icon-anchor="dynamicAnchor"
         icon-url="src/assets/logo.png"
     />
   </l-marker>

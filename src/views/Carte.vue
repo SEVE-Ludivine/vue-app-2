@@ -51,13 +51,6 @@ export default {
             .then(res => {
               this.json = (res.data.records)
               console.log(res.data.records)
-              // for(let e of this.json){
-              //   this.markers.push(e.fields.location)
-              //   console.log("LOCATION "+e.fields.location)
-              //   console.log(this.markers)
-              //   console.log(this.markers.id)
-              //   console.log(this.markers.location)
-              // }
             })
       } catch (error) {
         console.log(error);
