@@ -3,30 +3,30 @@
       :key="marker.recordid"
       :lat-lng="marker.fields.location"
   >
-<!--
-    <l-icon
-        :icon-url="src/assets/maps.png"
-    />-->
+    <l-popup>
+
+          {{marker.fields.nom_complet}}
+
+    </l-popup>
   </l-marker>
 </template>
 
 <script>
-import { LMarker/*, LIcon*/ } from 'vue2-leaflet'
+import { LMarker, LPopup } from 'vue2-leaflet'
+
 export default {
-  components: { LMarker/*, LIcon */},
+  components: {
+    LMarker,
+    LPopup,
+  },
   props: {
     marker: {
       type: Object,
       required: true
     }
   }
-
 }
 </script>
 
 <style>
-.restaurant-icon {
-  height: 50px;
-  width: auto;
-}
 </style>
